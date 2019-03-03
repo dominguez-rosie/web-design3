@@ -1,0 +1,41 @@
+body{
+	padding-top: 4%;
+	padding-bottom: 3%;
+	background-color: #fccec1 !important; 
+	color: #081639 !important;
+}
+
+
+dl{
+	padding: 5% 0%;
+}
+
+h1{
+	padding-top: 2.5%;
+}
+
+.container {
+	background-color: #fccec1;
+}
+
+h1.display-2{
+	color: #081639 !important;
+}
+
+.row{
+	padding: 5%;
+}
+.table{
+	margin-top: 5%;
+	margin-bottom:15%;
+}	
+
+ul.list-group{
+	padding: 5%;
+	min-width: 80%;
+	background-color: #fccec1 !important;
+}
+
+li.list-group-item{
+	background-color: #fccec1;
+}
