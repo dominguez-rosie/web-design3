@@ -39,3 +39,7 @@ ul.list-group{
 li.list-group-item{
 	background-color: #fccec1;
 }
+
+.navbar-light{
+	background-color: #f26b62;
+}	
