@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Class 5</title>
+    
+    
+  
+  </head>
+  <body>
+    <div>
+    <p id="text1">
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    </p>
+    <button id="button1_1" class="color-button">Color me!</button>
+    <button id="button1_2" class="hide-button">Hide me</button>
+    </div>
+    
+    <div>
+    <p id="text2"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here
+    </p>
+    <button id="button2_1" class="color-button">Color me!</button>
+    <button id="button2_2" class="hide-button">Hide me</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".color-button").click(function(){
+          console.log(this);
+            var redVal = Math.random()*255;
+            var greenVal = Math.random()*255;
+            var blueVal = Math.random()*255;
+          $(this).siblings("p").css("background-color", "rgb(" + redVal + ", "+ greenVal + ", " + blueVal +")");
+        });
+
+        $(".hide-button").click (function(){
+          if($(this).siblings("p").css("display")==="none"){
+              $(this).text("Hide me");
+          }
+          else{
+            $(this).text("Show me");
+          }
+            $(this).siblings("p").toggle();
+        });
+S
+      });
+    </script>
+
+    <!-- <script type="text/javascript"> 
+      var colorButton1=document.getElementById("button1");
+      var colorButton2 = document.getElementById("button2")
+
+      var displayButton1 = document.getElementById("button2_1");
+      var displayButton2 = document.getElementById("button2_2");
+
+      var text1 = document.getElementById("text1");
+      var text2 = document.getElementById("text2");
+
+
+
+      
+
+      function changeColor(textElement){
+        var redVal = Math.random()*255;
+        var greenVal = Math.random()*255;
+        var blueVal = Math.random()*255;
+
+        console.log(greenVal);
+
+        textElement.style.backgroundColor = "rgb(" + redVal + ", "+ greenVal + ", " + blueVal +")";
+      }
+
+
+      function hideText(textElement){  
+        var text=document.getElementById("text1");
+        textElement.style.display ="none";
+      }
+
+      colorButton1.addEventListener("click", changeColor(text1));
+      colorButton2.addEventListener("click", changeColor(text2));
+
+      //displayButton1.addEventListener("click", hideText(text1));
+      //displayButton2.addEventListener("click", hideText(text2));
+     
+     
+    </script>-->
+   
+  </body>
+</html>
