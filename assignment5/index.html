@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--custom css  -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <title>Rosie Dominguez - Assignment5</title>
+  </head>
+  <body>
+    
+    <div id="container">
+      <h1>Assignment 5 - JQuery</h1>
+      <hr>
+      <div class="row">
+        <div id="banner">
+          <p class="banner_content">
+            <i class="far fa-bell">   Alert: This is my banner</i>
+            
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <H2>Change CSS Properties</H2>
+            <div id="salmon_box" class=" col-lg-4 color_box">
+            </div>
+            <div id="navy_box" class="col-lg-4 color_box">
+            </div>
+            <button id="toggle_btn" class="btn btn-primary mb-2">Toggle Shape</button>     
+        </div> <!--end of column-->
+      </div><!-- end of row--->
+   <hr>  
+   <div class="row">
+      <div class="col">
+        <h2>Banner</h2>
+      <button class="alert btn btn-primary mb-2">Add alert</button>
+     </div>
+   </div><!--end of 3rd row --->
+
+   <hr>  
+   <div class="row"><!--begining of animation row-->
+      <div class="col">
+        <h2>Animation</h2>
+        <div id="my_name">
+          Rosie Dominguez
+        </div>
+        <div>  
+          <!-- <img src="img/my_logo.png"> -->
+        </div>  
+         <button id="animate_btn" class="btn btn-primary mb-2">Animate</button>
+      </div>
+   </div><!--end of animation row-->
+
+    <hr> 
+    <div class="row">
+      <div class="col">
+        <H2>Form w/ Validation</H2>
+
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2 name" id="inlineFormInput" placeholder="Jane Doe" required="Required">
+                <div class="error">Enter your name</div>
+              </div>
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input type="text" class="form-control username" id="inlineFormInputGroup" placeholder="Username" required="Required">
+                  <div class="error">Enter your username</div>
+                </div>
+              </div>
+              
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+        </form>
+      <hr>   
+      </div><!--end of col-->
+    </div><!-- end of row 2-->
+    
+   </div> <!-- end of container -->
+
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>     
+
+    <!-- My script -->
+    
+    <!-- changes two html elements -->
+    <script>  
+      // .css()
+      $(document).ready(function(){ 
+        $("#toggle_btn").click(function(){
+         console.log(this); 
+          $(".color_box").css("border-radius" ,"50%");
+         });
+      });
+   
+      // animation script
+      $("#animate_btn").click(function(){
+        console.log(this)
+         var div = $("#my_name");  
+          // div.animate({left: '100px'}, "slow");
+          div.animate({fontSize: '100PX'}, "slow");
+          div.animate({color: '#f26b62'}, "slow");
+          
+        });
+      
+ 
+      // top of page alert//
+   
+      $(document).ready(function(){
+        var hiddenBox = $("#banner");
+        $(".alert").on("click", function(){
+          hiddenBox.show();
+        });
+
+      });
+
+ 
+      // form blur method//
+      $(document).ready(function(){ 
+        console.log(this)
+       
+       input.onblur = function() {
+        if (!input.value.includes('@')) { // not email
+          input.classList.add('invalid');
+          error.innerHTML = 'Please enter a correct email.'
+        }
+      };
+
+      input.onfocus = function() {
+        if (this.classList.contains('invalid')) {
+          this.classList.remove('invalid');
+          error.innerHTML = "";
+        }
+      };
+
+      });
+      
+    </script>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

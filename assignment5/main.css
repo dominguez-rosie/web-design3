@@ -1,0 +1,90 @@
+body{
+	background-color: #fccec1;
+}
+
+h2{
+	color: #102f6b;
+	padding-bottom: 2.5%;
+}
+
+#banner{
+	width:80%;
+	height: 80px;
+	background-color: #081639;
+	border-radius: 10px; 
+	display: none;
+	padding: 2.5%;
+	margin: 0 auto;
+}
+
+.fa-bell{
+	float:left;
+	margin: auto;
+	color: #fccec1;
+}
+
+.banner_content{
+	color: #fccec1;
+	font-size: 20px;
+	/*text-align: center;*/
+	margin: auto;
+
+}
+
+.col{
+	padding: 2.5%;
+}
+
+#container{
+	margin: 2.5%;
+}
+
+#my_name{
+	padding-bottom: 2.5%;
+}
+
+#navy_box{
+	height:250px;
+	width: 250px;
+	background-color: #081639;
+	border-radius: 20px;
+	padding: 2.5%;
+	margin: 2.5%;
+	/*float: right;*/
+	
+}
+
+#salmon_box{
+	height: 250px;
+	width: 250px;
+	background-color: #f26b62;
+	border-radius: 20px;
+	padding: 2.5%;
+	margin: 2.5%;
+	/*float: left;*/
+}
+
+.btn-primary{
+	background-color: #f26b62;
+	border: navy;
+	border-radius: 30px;
+	padding: 10px 30px;
+}
+
+.btn-primary:hover{
+	background-color: #081639;
+}
+
+.error{
+	display: none;
+	color: red;
+}
+
+.row{
+	padding-left: 2.5%;
+
+}
+
+ 
+
+ 
