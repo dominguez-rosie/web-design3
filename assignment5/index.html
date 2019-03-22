@@ -73,8 +73,8 @@
             <div class="form-row align-items-center">
               <div class="col-auto">
                 <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control mb-2 name" id="inlineFormInput" placeholder="Jane Doe" required="Required">
-                <div class="error">Enter your name</div>
+                <input type="text" class="form-control mb-2 name textInput" id="inlineFormInput" placeholder="Jane Doe" required="Required">
+                <!-- <div class="error">Enter your name</div> -->
               </div>
               <div class="col-auto">
                 <label class="sr-only" for="inlineFormInputGroup">Username</label>
@@ -82,8 +82,8 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text">@</div>
                   </div>
-                  <input type="text" class="form-control username" id="inlineFormInputGroup" placeholder="Username" required="Required">
-                  <div class="error">Enter your username</div>
+                  <input type="text" class="form-control username textInput" id="inlineFormInputGroup" placeholder="Username" required="Required">
+                  <!-- <div class="error">Enter your username</div> -->
                 </div>
               </div>
               
@@ -136,7 +136,7 @@
       });
 
  
-      // form blur method//
+      // form blur method - my code that didn't work// 
       $(document).ready(function(){ 
         console.log(this)
        
@@ -154,6 +154,18 @@
         }
       };
 
+      });
+
+      // in class blur example applied to my inputs///
+
+      $(".textInput").blur(function(){
+        console.log(this.value);
+
+        if(this.value === ""){
+          $(".textInput").text("Please enter something.");
+        }else{
+          $(".textInput").text("");
+        }
       });
       
     </script>
