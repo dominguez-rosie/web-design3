@@ -1,0 +1,27 @@
+.navbar-expand-lg{
+	color: #3f21f4;
+	height: 15%;
+}
+
+.bd-placeholder-img{
+	height: 200px;
+	width: 200px;
+	margin-bottom: 5%;
+	align-items: center;
+}
+
+/* products css*/
+.products{
+	background-color: #fff;
+}
+
+.col-lg-4{
+	padding: 10% 2.5%;
+}
+
+/*index css*/
+.trigger{
+	padding: 10%;
+}
+
+/*team */
