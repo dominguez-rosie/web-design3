@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Rosie D - Assignment 6</title>
-
+    <title>Rosie D - MidTerm</title>
+    <script src="scrollBtn.js"></script>
   </head>
   <body>
     <!--navbar-->
@@ -19,19 +19,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Razorback Technologies</a>
+         <a class="navbar-brand" href="index.html">
+        <img src="images/gradient_logo.svg" class="nav_img">Razorback Technologies</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"><img src="images/outline_home.svg">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html"><img src="images/outline_about.svg">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Product</a>
+            <a class="nav-link" href="products.html"><img src="images/outline_products.svg">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" href="team.html"><img src="images/outline_team.svg">Team</a>
           </li>
         </ul>
       </div>
@@ -39,41 +40,92 @@
     <!-- end of nav-->
 
     <!-- jumbotron -->
-    <div class="container">
+    <div class="container jumbo_container">
       <div class="row">
         <div class="col">
-          <div class="jumbotron">
+          <div class="custom_jumbotron">
             <h1 class="display-4">Our Team</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p class="lead">Meet the makers and doers building your Razoback experience</p>
           </div>
         </div>
       </div>
     </div>
     <!-- end of jumbotron -->
 
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/ramy.jpg" class="team_img">
+        <h2>Experience Designer</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/lesley.jpg" class="team_img">
+        <h2>Development Guru</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/joseph.jpg" class="team_img">
+        <h2>Research Director</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div><!-- col -->
+    </div><!-- end of row -->
+   </div>  <!-- end of three column container-->
+
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/ollie.jpg" class="team_img">
+        <h2>Product Director</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/joseph.jpg" class="team_img">
+        <h2>Marketing Director</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/isela.jpg" class="team_img">
+        <h2>COO</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      </div><!-- col -->
+    </div><!-- end of row -->
+   </div>  <!-- end of three column container-->
+
     <!-- start of three column -->
    <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
+        <img src="images/erika.jpg" class="team_img">
+        <h2>Co-founder|CEO</h2>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
+        <img src="images/prince.jpg" class="team_img">
+        <h2>Co-founder|CFO</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
+        <img src="images/dera.jpg" class="team_img">
+        <h2>Technology Officer</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div><!-- col -->
     </div><!-- end of row -->
    </div>  <!-- end of three column container-->
+   
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <footer>
+            <p>©2019 Razorback Technology
+          <br>
+          800.987.6655</p>
+          </footer>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->

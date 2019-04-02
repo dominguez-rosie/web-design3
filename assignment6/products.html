@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Rosie D - Assignment 6</title>
+    <title>Rosie D - MidTerm</title>
+    <script src="scrollBtn.js"></script>
 
   </head>
   <body>
@@ -19,29 +20,30 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Razorback Technologies</a>
+        <a class="navbar-brand" href="index.html">
+        <img src="images/gradient_logo.svg" class="nav_img">Razorback Technologies</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"><img src="images/outline_home.svg">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html"><img src="images/outline_about.svg">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Product</a>
+            <a class="nav-link" href="products.html"><img src="images/outline_products.svg">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" href="team.html"><img src="images/outline_team.svg">Team</a>
           </li>
         </ul>
       </div>
     </nav> <!-- end of nav-->
 
     <!-- jumbotron -->
-    <div class="container">
+    <div class="container jumbo_container">
       <div class="row">
         <div class="col">
-          <div class="products jumbotron">
+          <div class="custom_jumbotron">
             <h1 class="display-4">Our Products</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
           </div>
@@ -56,16 +58,16 @@
 
     <div class="container">
       <div class="row">
-        <div class="col">
-
-          <hr class="featurette-divider">
+        <div class="col featurette_col">
+       
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+              <h2 class="featurette-heading">Face Enterprise Server SDK<!-- <span class="text-muted">Will blow your mind.</span> --></h2>
               <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+               <img class="p_placeholder" src="images/img_placeholder.png">
+            </div>
             </div>
           </div>
 
@@ -73,11 +75,27 @@
 
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">Face Public Safety.<!--  <span class="text-muted">See for yourself.</span> --></h2>
+                <p class="lead">Face Public Safety is specifically designed to ensure public safety on the scale of a metropolis, a region and even the whole country.
+                <p class="lead">
+                FindFace Public Safety is able to simultaneously analyze data from hundreds of thousands of surveillance cameras, instantly distinguishing and storing the meaningful information (people's faces) from video stream.
+                </p>
+                <p class="lead">
+                Such processing allows you to increase the depth of historical data storage by 20–30 times as compared to video storage: data accumulated over 2.5 year period are placed at capacities sufficient to store a monthly video archive.
+                </p>
+                <p class="lead">
+                All face images taken from the cameras are instantly compared to the monitoring database. From the moment of a person’s passing in front of the camera until the notification is being transmitted to a mobile device of a watch officer it takes no more than 2-3 seconds, this allows you to quickly respond to the situation and prevent offenses.
+                </p>
+                <p class="lead">
+                The face search function within the archive accumulated over the entire surveillance period makes it possible to accurately determine the permanent residence of wanted people, identify their usual displacement routes and alleged crime associables.
+                </p>
+                <p class="lead">
+                Advanced analytics features allow you to count unique visitors in the observation area, analyze the socio-demographic portrait of the audience with gender and age identification.
+                </p>
             </div>
             <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+              <img class="p_placeholder" src="images/img_placeholder.png">
+            </div>
             </div>
           </div>
 
@@ -85,43 +103,73 @@
 
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">Face Security. <!-- <span class="text-muted">Checkmate.</span> --></h2>
+              <p class="lead">Face Security accurately recognizes faces and runs on the client’s side – no biometric data is transferred or stored by Razorback Technology. It detects and identifies people in images and live video streams, creating an extra level of security for law enforcement and business organizations. Our solution can be used for access control, fraud and theft prevention, accelerating the investigation of the embezzlement of data and physical assets in a timely manner.
+
+              The solution also helps increase customer loyalty and satisfaction through personalized recommendations and anonymous analysis of shoppers’ behavior. FindFace Security can be used in a wide range of areas such as retail, banking and finance, sporting and other mass events, corporate and public safety.</p>
             </div>
             <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+               <img class="p_placeholder" src="images/img_placeholder.png">
+            </div>
+            
+          </div>
+
+          <hr class="featurette-divider">  
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Face Path. <!-- <span class="text-muted">Checkmate.</span> --></h2>
+              <p class="lead">Tracks the silhouette and path of a person passing by the camera. Accurate people count. Effective in big crowds where people obscure each other. Effective coupled with face recognition or as a stand-alone.</p>
+            </div>
+            <div class="col-md-5">
+             <img class="p_placeholder" src="images/img_placeholder.png">
             </div>
           </div>
 
-          <hr class="featurette-divider">              
+          <hr class="featurette-divider">
+
         </div>
       </div>
     </div>
     <!-- /END THE FEATURETTES -->
 
-    <div class="container">
+    <div class="container media_container">
       <div class="row">
         <div class="col">
            <ul class="list-unstyled">
             <li class="media">
-              <img src="..." class="mr-3" alt="...">
+              <img src="images/img_placeholder.png" class="mr-3" alt="...">
               <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <h5 class="mt-0 mb-1">Video Support</h5>
+                Directly detect, verify, and identify faces in a video stream.
               </div>
             </li>
             <li class="media my-4">
-              <img src="..." class="mr-3" alt="...">
+              <img src="images/img_placeholder.png" class="mr-3" alt="...">
               <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <h5 class="mt-0 mb-1">Face Detection</h5>
+                40 pixels Eye Distance. Reliably detect human faces in a photo, along with their coordinates and sizes.</p>
               </div>
             </li>
             <li class="media">
-              <img src="..." class="mr-3" alt="...">
+              <img src="images/img_placeholder.png" class="mr-3" alt="...">
               <div class="media-body">
-                <h5 class="mt-0 mb-1">List-based media object</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <h5 class="mt-0 mb-1">Verification 1:1</h5>
+                More than 99% Accuracy. Compare one face with another to identify if it is the same person or not.
+              </div>
+            </li>  
+            <li class="media">
+              <img src="images/img_placeholder.png" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Identification 1:N</h5>
+                Store billions of people in the gallery. Find a person by face in a pre-loaded collection of faces.
+              </div>
+            </li>
+            <li class="media">
+              <img src="images/img_placeholder.png" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Emotion, Gender, Age</h5>
+                Recognize people’s facial expressions and detects primary and secondary emotions. Also detects age and gender.
               </div>
             </li>
           </ul>
@@ -129,10 +177,16 @@
       </div>
     </div>
 
-    <div class="container">
+       <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+       <hr>
+      <div class="container">
       <div class="row">
         <div class="col">
-           
+          <footer>
+            <p>©2019 Razorback Technology
+          <br>
+          800.987.6655</p>
+          </footer>
         </div>
       </div>
     </div>

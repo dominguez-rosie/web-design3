@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Rosie D - Assignment 6</title>
+    <title>Rosie D - MidTerm</title>
+    <script src="scrollBtn.js"></script>
 
   </head>
   <body>
@@ -19,47 +20,63 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Razorback Technologies</a>
+         <a class="navbar-brand" href="index.html">
+        <img src="images/gradient_logo.svg" class="nav_img">Razorback Technologies</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"><img src="images/outline_home.svg">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html"><img src="images/outline_about.svg">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Product</a>
+            <a class="nav-link" href="products.html"><img src="images/outline_products.svg">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" href="team.html"><img src="images/outline_team.svg">Team</a>
           </li>
         </ul>
       </div>
     </nav> <!-- end of nav-->
 
     <!-- jumbotron -->
-    <div class="container">
+    <div class="container jumbo_container">
       <div class="row">
         <div class="col">
-          <div class="jumbotron">
+          <div class="custom_jumbotron">
             <h1 class="display-4">About Us</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </div>
+            </div>
         </div>
       </div>
     </div>
     <!-- end of jumbotron -->
 
-    <div class="container">
+    <div class="container about_container">
       <div class="row">
-       <div class="col" >
-        
+       <div class="col">
+        <h1>Who we are</h1>
+        <p>We are a group of experts in the field of deep learning and artificial intelligence. We like to invent algorithms which work in unconstrained real-life scenarios</p>
+        <p>We are a team who decided to challenge the way that most software houses work.
+
+        We believe in approaching each project as a potential game-changer and because of that, we support our clients comprehensively, going far beyond the code. Combining tech expertise with understanding of business needs, we ensure that the products we make not only work but succeed. </p>
+                
        </div> 
       </div>  
     </div>
+     <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+     <hr>
+      <div class="container">
+    <div class="row">
+      <div class="col">
+        <footer>
+          <p>©2019 Razorback Technology
+          <br>
+          800.987.6655</p>
+
+        </footer>
+      </div>
+    </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
