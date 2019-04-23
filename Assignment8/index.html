@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <title>RD-Assignment 8</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+           <h1>Drinks</h1>
+           <div class="alert alert-primary" id="banner" role="alert">
+           Great choice!
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form action="form-process.php" method="POST" class="shadow p-3 mb-5 bg-white rounded">
+           <!--  <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div> -->
+            <div><h3>Which do you prefer?</h3></div> 
+            <div class="form-check-inline">
+              <input class="form-check-input" type="radio" name="beers" id="Beers" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+               Beers
+                </label>
+            </div>
+            <div class="form-check-inline">
+             <input class="form-check-input" type="radio" name="ciders" id="Ciders" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Ciders
+               </label>
+          </div>
+            <div class="form-group">
+             
+              <select class="form-control" id="drinks">
+                <option></option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+       <script>
+        $(document).ready(function(){
+            var beers = ["Farmhouse ales", "IPAs", "Porter", "Wit", "Sours", "Stouts"];
+            var ciders = ["English","French","Modern", "Old_world", "Traditional", "Spanish"];
+               $("#beers").change(function(){   
+                var currentSelect = $(this).val();
+                var innerContent = "";
+                $('#ciders').removeAttr('disabled');
+                switch(currentSelect){
+                    case "beers":
+                        for(var i = 0; i < beers.length; i++){
+                            innerContent += '<option value="' + beers[i].toLowerCase() + '">' + beers[i] + "</option>";
+                        }
+                        break;
+                    case "ciders":
+                        for(var i = 0; i < ciders.length; i++){
+                            innerContent += '<option value="' + ciders[i].toLowerCase() + '">' + ciders[i] + "</option>";
+                        }
+                        break;
+                   
+                    default:
+                        break;
+                }//end of switch
+                console.log(innerContent);
+                $('#drinks').html(innerContent);  
+            }); // end of change event
+           
+          var hiddenBox = $("#banner");
+        $(".alert").on("click", function(){
+          hiddenBox.show();
+        });
+
+
+        });// end of document ready
+    </script>
+
+  </body>
+</html>
