@@ -26,6 +26,7 @@ function animate() {
 	context.fill();	
 	context.stroke();
 
+
 	if(ballX + ballRadius >= canvas.width || ballX - ballRadius <= 0){
 		moveRight = !moveRight;
 	}
@@ -66,11 +67,18 @@ canvas.addEventListener('click', function(event){
 	}
 
 
+	function drawScore() {
+	    context.font = "16px Arial";
+	    context.fillStyle = "#0095DD";
+	    context.fillText("Score: "+score, 8, 20);
+	}
 
-function drawScore() {
-    context.font = "16px Arial";
-    context.fillStyle = "#0095DD";
-    context.fillText("Score: "+score, 8, 20);
-}
+	function draw(){
+	context.drawScore();
+	}
+
+	function changeColor(){
+		
+	}
 
 });
