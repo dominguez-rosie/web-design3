@@ -1,3 +1,17 @@
+@media (min-width: 376px) { 
+	
+ .container.contact_us{
+	width: 90%;
+  }
+
+ }
+
+/*------- desktop view -----*/
+nav{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+}
+
 nav.bg-light{
 	background-color: #FFF !important; 
 
@@ -5,7 +19,17 @@ nav.bg-light{
 
 /*body{
 	background: #f0fcf9;
-}*/
+}
+*/
+footer{
+	background-color: #00a57b;
+	color: #FFF;
+	height: 2.5%;
+	margin-top:16px;
+	padding: 1%;
+
+
+}
 
 h1{
 	color: #fff;
@@ -21,6 +45,39 @@ h1{
 img{
 	border-radius: 35px;
 }
+
+
+
+button.btn.btn-primary{
+	background-color: #00a57b; 
+	border-color: #00a57b;
+}
+
+form{
+	width: 100%;
+}
+
+img.centered_img{
+	margin: 0 auto;
+}
+
+.container.left{
+	width: 45%;
+	float: left;
+	padding-left: 60px;
+}
+
+.container.contact_us{
+	width: 50%;
+	float: right;
+	background-color: #fff;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding: 5% 2.5%;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 16px;
+}
+
 .badge-info{
 	background-color: #00a57b; 
 	margin: 0px 12px;
