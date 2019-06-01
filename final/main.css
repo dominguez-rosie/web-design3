@@ -1,15 +1,9 @@
-@media (min-width: 376px) { 
-	
- .container.contact_us{
-	width: 90%;
-  }
 
- }
 
 /*------- desktop view -----*/
 nav{
-	font-family: 'Libre Baskerville', serif;
-	font-size: 16px;
+	font-family: 'Dancing Script', serif;
+	font-size: 20px;
 }
 
 nav.bg-light{
@@ -27,9 +21,8 @@ footer{
 	height: 2.5%;
 	margin-top:16px;
 	padding: 1%;
-
-
 }
+
 
 h1{
 	color: #fff;
@@ -42,16 +35,19 @@ h1{
 	z-index: 99;
 }
 
+h2{
+	font-family: 'Libre', sans-serif;
+}
 img{
 	border-radius: 35px;
 }
-
 
 
 button.btn.btn-primary{
 	background-color: #00a57b; 
 	border-color: #00a57b;
 }
+
 
 form{
 	width: 100%;
@@ -61,18 +57,33 @@ img.centered_img{
 	margin: 0 auto;
 }
 
-.container.left{
+.card{
+	margin: 15px;
+}
+
+.container{
+	width:100%;
+}
+
+
+
+.col-lg-6.left{
+
 	width: 45%;
 	float: left;
 	padding-left: 60px;
 }
 
-.container.contact_us{
-	width: 50%;
+.col{
+	margin: 15px 0px;
+}
+.col-lg-6.right{
+	
+	/*width: 50%;
 	float: right;
 	background-color: #fff;
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 20px;*/
 	padding: 5% 2.5%;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 16px;
@@ -82,11 +93,17 @@ img.centered_img{
 	background-color: #00a57b; 
 	margin: 0px 12px;
 }
-c
 
-.nav-item.cart a{
+.btn.btn-primary{
+	background-color:  #00a57b;
+	border:  #00a57b;
+}
+
+
+.nav-item.cart{
 	float: right;
 }
+
 
 .nav-item a:hover{
 	background-color: #eee;
@@ -99,6 +116,10 @@ c
 	padding: 0px 16px;
 }
 
+.nav-link{
+	font-family: 'Libre', sans-serif;
+}
+
 .brand_icon{
 	padding-right: 12px;
 }
@@ -107,8 +128,6 @@ c
 	background-color: #eee;
 	border-radius: 30px;
 	color: #f0fcf9;
-	
-	
 }
 
 .media{
@@ -118,6 +137,11 @@ c
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 16px;
 }
+
+.row{
+	 padding-top: 40PX;
+}
+
 #scrollTopBtn{
 	position: fixed;
 	bottom: 20px;
@@ -132,3 +156,18 @@ c
 	border-radius: 16px;
 	border: none;
 }
+
+/*------ mobile view */
+
+/*@media (min-width: 576px) { 
+	
+ .col-lg-2.right{
+	width: 90%;
+	margin: 0 auto;
+ }
+
+ .col-lg-2.left{
+ 	width: 90%;
+ }
+
+}*/
