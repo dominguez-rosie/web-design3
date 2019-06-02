@@ -48,6 +48,11 @@ button.btn.btn-primary{
 	border-color: #00a57b;
 }
 
+button.btn.btn-secondary{
+	background-color: pink; 
+	border-color: pink;
+}
+
 
 form{
 	width: 100%;
@@ -57,8 +62,24 @@ img.centered_img{
 	margin: 0 auto;
 }
 
+
+
 .card{
 	margin: 15px;
+}
+
+.card.p-2{
+	margin: 0px;
+}
+.card-body{
+	/*border-top-right-radius: 30px;
+	border-top-left-radius: 30px;*/
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top{
+	border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px)
 }
 
 .container{
@@ -77,6 +98,7 @@ img.centered_img{
 .col{
 	margin: 15px 0px;
 }
+
 .col-lg-6.right{
 	
 	/*width: 50%;
@@ -85,7 +107,6 @@ img.centered_img{
 	margin-top: 20px;
 	margin-right: 20px;*/
 	padding: 5% 2.5%;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 16px;
 }
 
@@ -94,9 +115,16 @@ img.centered_img{
 	margin: 0px 12px;
 }
 
+.badge.badge-secondary.badge-pill{
+	background-color: #00a57b;
+}
+
 .btn.btn-primary{
 	background-color:  #00a57b;
 	border:  #00a57b;
+}
+.jumbotron{
+	background-color: #d6f4f2;
 }
 
 
