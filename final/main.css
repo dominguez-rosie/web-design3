@@ -38,6 +38,11 @@ h1{
 h2{
 	font-family: 'Libre', sans-serif;
 }
+
+h3{
+	padding: 2% 5%;
+}
+
 img{
 	border-radius: 35px;
 }
@@ -128,7 +133,7 @@ img.centered_img{
 }
 
 
-.nav-item.cart{
+li.nav-item.cart{
 	float: right;
 }
 
@@ -147,6 +152,12 @@ img.centered_img{
 
 .nav-link{
 	font-family: 'Libre', sans-serif;
+	padding: 0px 1.5rem;
+
+}
+
+a.nav-link{
+	padding: 0px 1rem;
 }
 
 .brand_icon{
