@@ -30,8 +30,8 @@ h1{
 	font-size: 90px;
 	text-shadow:  2px 2px 12px #000;
 	position: absolute;
-	bottom: 50%;
-	left:35%;
+	/*bottom: 50%;
+	left:35%;*/
 	z-index: 99;
 }
 
@@ -69,18 +69,10 @@ img.centered_img{
 
 
 
-/*.card{
-	margin: 15px;
-}*/
-
 .card.p-2{
 	margin: 0px;
 }
-/*.card-body{
-	border-top-right-radius: 30px;
-	border-top-left-radius: 30px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-}*/
+
 
 .card-img-top{
 	border-bottom-left-radius: calc(.25rem - 1px);
@@ -132,6 +124,12 @@ img.centered_img{
 	background-color: #d6f4f2;
 }
 
+.jumbotron h2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 72px;
+	text-align: center;
+}
+
 
 li.nav-item.cart{
 	float: right;
@@ -140,7 +138,7 @@ li.nav-item.cart{
 
 
 .nav-item a:hover{
-	background-color: #eee;
+	background-color: #d6f4f2;
 	border-radius: 30px;
 	color: #f0fcf9;
 	
@@ -197,17 +195,15 @@ a.nav-link{
 	border: none;
 }
 
-/*------ mobile view */
+/*------ mobile view ---*/
 
 /*@media (min-width: 576px) { 
 	
- .col-lg-2.right{
-	width: 90%;
-	margin: 0 auto;
- }
+	 .jumbotron h2{
+		
+		font-size: 20px;
+		
+	}
 
- .col-lg-2.left{
- 	width: 90%;
- }
-
-}*/
+}
+*/
