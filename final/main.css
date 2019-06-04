@@ -221,24 +221,23 @@ a.nav-link{
 
     /*------animation -----*/
 
-      #scrollTopBtn {
-      animation: colorchange infinite; 
-      -webkit-animation: colorchange infinite; 
+      .jumbotron{
+      animation: colorchange 50s infinite; 
+      /* Chrome and Safari */
     }
 
     @keyframes colorchange
     {
-    
-
-      0%  {background: #00a57b;}
-     50%  {background: pink;}
-      
+      0%   {background: #d6f4f2;}
+      50%  {background: pink;}
+      100% {background: #00a57b}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-   0%  {background: #00a57b;}
-     50%  {background: pink;}
+     0%   {background: #d6f4f2;}
+      50%  {background: pink;}
+      100% {background: #00a57b}
     }
 
 /*------ mobile view ---*/
