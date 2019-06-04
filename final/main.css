@@ -40,7 +40,7 @@ h2{
 }
 
 h3{
-	padding: 2% 5%;
+	padding: 2% 0% .5% 7.5%;
 }
 
 img{
@@ -54,7 +54,7 @@ button.btn.btn-primary{
 }
 
 button.btn.btn-secondary{
-	background-color: pink; 
+	background-color: #f5cedd; 
 	border-color: pink;
 }
 
@@ -81,6 +81,7 @@ img.centered_img{
 
 .container{
 	width:100%;
+	margin: 0 auto;
 }
 
 
@@ -94,6 +95,7 @@ img.centered_img{
 
 .col{
 	margin: 15px 0px;
+	width: 100%;
 }
 
 .col-lg-6.right{
@@ -120,6 +122,12 @@ img.centered_img{
 	background-color:  #00a57b;
 	border:  #00a57b;
 }
+
+
+.cover-heading{
+	text-align: center;
+}
+
 .jumbotron{
 	background-color: #d6f4f2;
 }
@@ -135,12 +143,18 @@ li.nav-item.cart{
 	float: right;
 }
 
-
+.main_header{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	vertical-align: middle;
+	top: 50%;
+}
 
 .nav-item a:hover{
-	background-color: #d6f4f2;
+	background-color: pink;
 	border-radius: 30px;
-	color: #f0fcf9;
+	color: #00a57b;
 	
 }
 
@@ -177,7 +191,7 @@ a.nav-link{
 }
 
 .row{
-	 padding-top: 40PX;
+	 padding-top: 20PX;
 }
 
 #scrollTopBtn{
@@ -191,9 +205,41 @@ a.nav-link{
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	width: 56px;
 	height: 56px;
-	border-radius: 16px;
+	border-radius: 20px;
 	border: none;
 }
+
+#scrollTopBtn:hover {
+  background-color: pink;
+  border-radius: 50%;
+  color: grey;
+}
+
+#cover{
+	width: 100vw;
+}
+
+    /*------animation -----*/
+
+      #scrollTopBtn {
+      animation: colorchange infinite; 
+      -webkit-animation: colorchange infinite; 
+    }
+
+    @keyframes colorchange
+    {
+    
+
+      0%  {background: #00a57b;}
+     50%  {background: pink;}
+      
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+   0%  {background: #00a57b;}
+     50%  {background: pink;}
+    }
 
 /*------ mobile view ---*/
 
