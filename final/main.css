@@ -40,6 +40,8 @@ h2{
 }
 
 h3{
+	font-family: 'Libre', sans-serif;
+	font-size: 34px;
 	padding: 2% 0% .5% 7.5%;
 }
 
@@ -73,8 +75,14 @@ img.centered_img{
 	margin: 0px;
 }
 
+.card{
+	border-radius: 30px;
+
+}
 
 .card-img-top{
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 	border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px)
 }
@@ -123,12 +131,17 @@ img.centered_img{
 	border:  #00a57b;
 }
 
+/*a.btn.btn-primary.add{
+	align-items: center;
+}*/
+
 
 .cover-heading{
 	text-align: center;
 }
 
 .jumbotron{
+	animation: colorchange 50s infinite;
 	background-color: #d6f4f2;
 }
 
@@ -140,7 +153,7 @@ img.centered_img{
 
 
 li.nav-item.cart{
-	float: right;
+	float: right !important;
 }
 
 .main_header{
@@ -158,18 +171,24 @@ li.nav-item.cart{
 	
 }
 
+.navbar-nav{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .navbar-brand{
 	padding: 0px 16px;
 }
 
 .nav-link{
 	font-family: 'Libre', sans-serif;
-	padding: 0px 1.5rem;
-
+	/*padding: 0px 3rem;
+*/
 }
 
 a.nav-link{
-	padding: 0px 1rem;
+	padding-left:  30px !important;
+	padding-right: 30px !important;
 }
 
 .brand_icon{
@@ -195,6 +214,7 @@ a.nav-link{
 }
 
 #scrollTopBtn{
+	animation: colorchange2 50s infinite;
 	position: fixed;
 	bottom: 20px;
 	right: 30px;
@@ -221,10 +241,8 @@ a.nav-link{
 
     /*------animation -----*/
 
-      .jumbotron{
-      animation: colorchange 50s infinite; 
-      /* Chrome and Safari */
-    }
+  
+
 
     @keyframes colorchange
     {
@@ -239,6 +257,31 @@ a.nav-link{
       50%  {background: pink;}
       100% {background: #00a57b}
     }
+
+    .btn.btn-primary.add{
+      animation: btncolorchange 50s infinite; 
+      /* Chrome and Safari */
+    }
+
+    @keyframes colorchange2
+    {
+      0%   {background: #d6f4f2;
+      		color: #000;
+      }
+      50%  {background: pink;
+      		color: #000;}
+      100% {background: #00a57b;
+      		color: #fff;
+      }
+    }
+
+    
+    {
+     0%   {background: #d6f4f2;}
+      50%  {background: pink;}
+      100% {background: #00a57b}
+    }
+
 
 /*------ mobile view ---*/
 
